@@ -77,15 +77,14 @@
 					printf(file_get_contents("./html/entry_parameter.txt"), $userID, $userPASS);
 
 					//登録処理
-					$link = mysql_connect(DB_URL,DB_USER,DB_PASS) or die("MySQLへの接続に失敗しました。");
-					mysql_query('SET NAMES utf8', $link) or die("can not SET NAMES sjis");
-					$sdb = mysql_select_db(DB,$link) or die("データベースの選択に失敗しました。");
-					$sql = sprintf("SELECT * from user");
-					$result = mysql_query($sql, $link) or die("クエリの送信に失敗しました。<br />SQL:".$sql);
-					$rows = mysql_num_rows($result);
+					$link = mysqli_connect(DB_URL,DB_USER,DB_PASS,DB);
+					mysqli_query($link,'SET NAMES utf8') or die("can not SET NAMES sjis");
+					$sql = "SELECT * from user";
+					$result = mysql_query($link,$sql) or die("クエリの送信に失敗しました。<br />SQL:".$sql);
+					$rows = mysqli_num_rows($result);
 					$userNUM = $rows + 1;
-					$sql2 = sprintf("INSERT INTO user VALUES('%s','%s','%s')", $userID, $userPASS, $userNUM);
-					$result2 = mysql_query($sql2, $link) or die("クエリの送信に失敗しました。<br />SQL:".$sql);
+					$sql2 = "INSERT INTO user VALUES('$userID','$userPASS','$userNUM')";
+					$result2 = mysqli_query($link,$sql2) or die("クエリの送信に失敗しました。<br />SQL:".$sql);
 					// MySQLへの接続を閉じる
 					mysql_close($link) or die("MySQL切断に失敗しました。");
 				}
