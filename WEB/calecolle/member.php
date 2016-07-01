@@ -61,7 +61,7 @@
 			header("Location: index.php");
 			exit();
 		}
-		include "./html/calendar201603.txt";			//カレンダー
+		include "./html/calendar201607.txt";			//カレンダー
 	}
 ?>
 
