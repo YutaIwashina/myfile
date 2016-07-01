@@ -1,0 +1,5 @@
+<div id="entry_parameter">
+	<p class="textmargin-p">ID : %s</p>
+	<p class="textmargin-p">Pass : %s</p>
+	<p class="textmargin-p">登録できました。<br><a href="login.php">ログイン</a>へ</p>
+</div>

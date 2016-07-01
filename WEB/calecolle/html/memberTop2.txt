@@ -1,0 +1,15 @@
+</div>
+        </div>
+        
+        <div class="koma10">
+        	<img src="./html_img/calen.png" width="202px" height="202px" alt="カレンダー見本">
+            <p class="textmargin-p">カレンダーに<br>カーソルを合わせて、クリックして進んでください。</p>
+        </div>
+        <div class="koma11">
+        	<ul>
+            	<li><a href="#">2016 1月</a>＜</li>
+                <li>2016 2月</li>
+                <li>＞<a href="#">2016 3月</a></li>
+            </ul>
+        </div>
+    </div>

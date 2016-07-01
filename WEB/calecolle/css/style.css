@@ -1,0 +1,385 @@
+@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+body{
+	/*font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;*/
+	font-family: 'Noto Sans Japanese', sans-serif;
+}
+
+li{
+	list-style-type:none;
+}
+
+a{
+	text-decoration:none;
+	color:#000;
+	/*border-bottom:solid 2px #42bfe5;*/
+}
+
+a:hover{
+	color:#ea535c;
+}
+
+#myCanvas{
+	border:2px solid #000;
+	/*cursor:closshair;*/
+	cursor:url("../html_img/cursor.png"), pointer;
+	margin-top:10px;
+	margin-left:30px;
+}
+
+#wrapper{
+	width:600px;
+	height:820px;
+	margin:0 auto;
+	border:solid 2px #000;
+}
+
+#wrapper2{
+	width:600px;
+	margin:0 auto;
+	border:solid 2px #000;
+}
+
+#up{
+	margin-left:14px;
+	margin-top:14px;
+	width:572px;
+	height:452px;
+}
+
+#up2{
+	margin-top:14px;
+	margin-left:14px;
+	width:572px;
+	height:282px;
+}
+
+#down{
+	margin-top:52px;
+	margin-left:14px;
+	width:572px;
+	height:282px;
+}
+
+#down2{
+	margin-top:52px;
+	margin-left:14px;
+	width:572px;
+	height:452px;
+}
+
+.red{
+	color:#ea535c;
+}
+
+.blue{
+	color:#42bfe5;
+}
+
+.underline{
+	border-bottom:solid 2px #42bfe5;
+}
+
+.error{
+	float:left;
+	margin-left:10px;
+	font-size:10pt;
+}
+
+.right_Cullum{
+	float:right;
+	margin-left:20px;
+}
+
+.EntLog{
+	margin-top:50px;
+}
+
+/*textmargin*/
+
+.textmargin-h2, .textmargin-p, .textmargin-h3{
+	letter-spacing:2px;
+	line-height:30px;
+}
+
+.textmargin-p{
+	margin-left:20px;
+}
+
+.textmargin-h2{
+	margin-left:10px;
+}
+
+.textmargin-h3{
+	text-align:center;
+	line-height:50px;
+}
+
+.textmargin-h4{
+	margin-left:10px;
+	font-size:12pt;
+	letter-spacing:2px;
+	line-height:15px;
+}
+
+.textmargin-p2{
+	font-size:10pt;
+	letter-spacing:1px;
+	line-height:25px;
+	margin-left:20px;
+	margin-top:20px;
+}
+
+/*--------------------------------
+index.html
+--------------------------------*/
+
+/*koma1,koma2*/
+
+.koma1, .koma2{
+	margin-top:0px;
+	border:solid 2px #000;
+	width:302px;
+	height:214px;
+}
+
+.koma2{
+	margin-top:20px;
+}
+
+/*koma3*/
+.koma3{
+	margin-top:0px;
+	float:left;
+	width:232px;
+	height:452px;
+	border:solid 2px #000;
+}
+
+.koma3 img{
+	margin-top:40px;
+}
+
+.koma3 a{
+	border-bottom:solid 2px #42bfe5;
+}
+
+/*koma4,koma5*/
+.koma4, .koma5{
+	margin-top:0px;
+	border:solid 2px #000;
+	height:282px;
+}
+
+.koma4{
+	width:152px;
+}
+
+.koma4 .tate{
+	margin-right:60px;
+}
+
+.koma5{
+	width:382px;
+}
+
+.koma5 img{
+	margin-left:10px;
+	margin-top:20px;
+}
+
+.tate{
+	width:20px;
+	writing-mode:vertical-rl;
+	margin-top:20px;
+	font-size:16pt;
+	letter-spacing:3px;
+	float:right;
+}
+
+/*--------------------------------
+entry.php
+--------------------------------*/
+
+.formmargin-h3{
+	letter-spacing:2px;
+	margin-top:50px;
+	margin-left:10px;
+}
+
+.formmargin-p{
+	margin-left:12px;
+}
+
+.form{
+	margin-left:5px;
+}
+
+.button{
+	float:right;
+	margin-right:20px;
+}
+
+#entry_parameter{
+	width:200px;
+	margin-top:140px;
+	margin-left:20px;
+}
+
+/*--------------------------------
+member.php
+--------------------------------*/
+
+/*koma6*/
+
+.koma6{
+	margin:0 auto;
+	width:568px;
+	height:452px;
+	border:solid 2px #000;
+}
+
+.koma6 a:hover{
+	font-size:14pt;
+}
+
+.koma6 ul{
+	list-style:none;
+	font-size:15px;
+	padding-top:10px;
+	padding-left:4px;
+}
+
+.koma6 ul li{
+	width:70px;
+	float:left;
+	height:56px;
+	background:#eee;
+	margin:2px;
+	padding:3px;
+}
+
+.koma6 ul li.day{
+	font-variant:small-caps;
+	font-size:13px;
+	background:#fff;
+	height:25px;
+	text-align:center;
+}
+
+.koma6 .day{
+	display:block;
+}
+
+#calen{
+	margin:0 auto;
+}
+
+/*koma8,koma9*/
+
+.koma8{
+	margin-top:0px;
+	width:170px;
+	height:120px;
+	border:solid 2px #000;
+}
+
+.koma9{
+	margin-top:20px;
+	width:170px;
+	height:162px;
+	border:solid 2px #000;
+}
+
+.koma9 .textmargin-h2{
+	font-size:14pt;
+}
+
+/*koma10,koma11*/
+
+.koma10{
+	margin-top:0px;
+	width:362px;
+	height:202px;
+	border:solid 2px #000;
+}
+
+.koma10 .textmargin-p{
+	margin-top:40px;
+	width:140px;
+	float:right;
+	font-size:11pt;
+}
+
+.koma11{
+	margin-top:20px;
+	width:362px;
+	height:80px;
+	border:solid 2px #000;
+}
+
+.koma11 ul{
+	width:320px;
+	padding-left:27px;
+}
+
+.koma11 li{
+	float:left;
+	margin-top:20px;
+}
+
+.koma11 li:nth-child(2){
+	font-size:16pt;
+	margin-top:14px;
+	margin-left:20px;
+	margin-right:20px;
+	color:#42bfe5;
+}
+
+/*--------------------------------
+canvas.php
+--------------------------------*/
+
+.koma6 form{
+	margin-left:32px;
+}
+
+.koma10 form{
+	margin-top:30px;
+	margin-left:10px;
+}
+
+#tyu1_margin{
+	margin-left:28px;
+}
+
+#koma11font{
+	margin-left:10px;
+	margin-right:10px;
+	letter-spacing:3px;
+	font-size:14pt;
+	color:#ea535c;
+}
+
+.koma11 p{
+	margin-top:12px;
+}
+
+/*--------------------------------
+collection.html
+--------------------------------*/
+
+#wrapperSample{
+	width:600px;
+	margin:0 auto;
+	border:solid 2px #000;
+}
+
+#wrapperSample img{
+	margin-top:20px;
+	margin-left:48px;
+	margin-bottom:20px;
+	border:solid 2px #000;
+}

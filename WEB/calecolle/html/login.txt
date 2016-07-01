@@ -1,0 +1,14 @@
+<form action="login.php" method="post">
+	<h3 class="formmargin-h3">ID</h3>
+	<p class="formmargin-p">
+		（半角英数字4-8文字以内）<br>
+		<span class="form"><input type="text" name="id" size="25" value="%s"></span>
+	</p>
+	<h3 class="formmargin-h3">パスワード</h3>
+	<p class="formmargin-p">
+		（半角英数字6-12文字以内）<br>
+		<span class="form"><input type="password" name="pass" size="25" value="%s"></span>
+	</p>
+	<p><span class="button"><input type="submit" value="ログイン"></span></p>
+	<input type="hidden" name="disp_no" value="1">
+</form>

@@ -1,0 +1,6 @@
+<div id="wrapper">
+	<div id="up2">
+        <div class="right_Cullum">
+            <div class="koma8"><a href="index.php"><img src="./html_img/logo3-0mini.png" width="170px" height="120px" alt="ロゴ"></a></div>
+            <div class="koma9">
+            	<h2 class="textmargin-h2">こんにちは</h2>

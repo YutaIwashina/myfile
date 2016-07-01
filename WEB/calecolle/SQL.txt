@@ -1,0 +1,55 @@
+cd C:\xampp\mysql\bin
+
+mysql -u root -p
+
+/*
+show databases;
+drop database -;
+create database -;
+*/
+
+connect pure;
+
+select * from user;
+
+delete from user;
+
+CREATE TABLE user
+(
+	ID		varchar(8),
+	PASS		varchar(12),
+	NUM		int,
+	PRIMARY KEY(id)
+);
+
+select NUM from user WHERE ID=1111;
+
+
+
+————————————————————————————
+
+cd /Applications/MAMP/Library/bin
+
+./mysql -u root -p
+
+/*
+show databases;
+drop database -;
+create database -;
+*/
+
+connect pure;
+
+select * from user;
+
+delete from user;
+
+CREATE TABLE user
+(
+ID varchar(8),
+PASS varchar(12),
+NUM int,
+PRIMARY KEY(id)
+);
+
+select NUM from user WHERE ID=1111;

@@ -1,0 +1,28 @@
+<div id="down2">
+        <div class="koma6">
+
+			<form autocomplite="off">色：
+				<input type="radio" name="color" id="color" value="rgb(0,0,0)" checked>黒
+				<input type="radio" name="color" value="red">赤
+				<input type="radio" name="color" value="blue">青
+				線幅：	<select id="width">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3" selected>3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+						</select>
+				<input type="button" id="clearButton" value="すべて消去"> 
+				<input type="button" id="undoButton" value="ひとつ前の線を消去">
+				<!--input type="button" id="imageButton" value="画像化"-->
+				<input type="button" id="postButton" value="投稿">
+			</form>
+
+			<canvas id="myCanvas" width="500px" height="400px"></canvas>
+			
+		 </div>
+    </div>
+    
+</div>
