@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="53a-9I-1Qc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="HMl-J2-eiV">
+            <objects>
+                <viewController id="53a-9I-1Qc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5lp-BN-UK9"/>
+                        <viewControllerLayoutGuide type="bottom" id="wSl-OM-Vlw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="idx-47-iY5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="じゃんけんするばい？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LkQ-gb-FXK">
+                                <rect key="frame" x="75" y="51" width="170" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="surubai180.png" translatesAutoresizingMaskIntoConstraints="NO" id="SAu-l3-0zd">
+                                <rect key="frame" x="40" y="93" width="240" height="240"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nqm-D9-EDT">
+                                <rect key="frame" x="123" y="447" width="75" height="30"/>
+                                <state key="normal" title="するばい！"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="kF7-9D-CT0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OYl-bb-O2K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-67" y="274"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="janken" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pa.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="sWp-SW-PlO">
+                                <rect key="frame" x="85" y="40" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="0wW-KE-P4w"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="G8S-lP-bt8"/>
+                                    <constraint firstAttribute="height" constant="150" id="XJD-vl-Dq1"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="f67-cr-iYN"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pa.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fIr-O2-ynJ">
+                                <rect key="frame" x="85" y="200" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="il7-Ml-2Zj"/>
+                                    <constraint firstAttribute="width" constant="150" id="zlT-Ae-Ves"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fly-Ir-uex">
+                                <rect key="frame" x="123" y="360" width="75" height="30"/>
+                                <state key="normal" title="最初はグー"/>
+                                <connections>
+                                    <action selector="tapStart" destination="BYZ-38-t0r" eventType="touchUpInside" id="YVB-GO-cW8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="じゃんけんするばい" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIM-xj-RCQ">
+                                <rect key="frame" x="36" y="430" width="248" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3Fy-yQ-YJR">
+                                <rect key="frame" x="36" y="491" width="248" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EC0-zE-Os4">
+                                        <rect key="frame" x="0.0" y="0.0" width="69" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="ぐー"/>
+                                        <connections>
+                                            <action selector="tapGu" destination="BYZ-38-t0r" eventType="touchUpInside" id="37g-SZ-Cci"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wc-BK-qgm">
+                                        <rect key="frame" x="89" y="0.0" width="70" height="30"/>
+                                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="ちょき"/>
+                                        <connections>
+                                            <action selector="tapTyoki" destination="BYZ-38-t0r" eventType="touchUpInside" id="4WU-BZ-jWB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="An6-iS-L2s">
+                                        <rect key="frame" x="179" y="0.0" width="69" height="30"/>
+                                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="ぱぁ"/>
+                                        <connections>
+                                            <action selector="tapPa" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Ss-nl-yiL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fly-Ir-uex" firstAttribute="top" secondItem="fIr-O2-ynJ" secondAttribute="bottom" constant="10" id="3tW-jF-Pz4"/>
+                            <constraint firstItem="fly-Ir-uex" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6uZ-T1-1Yy"/>
+                            <constraint firstItem="BIM-xj-RCQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="JAk-ia-QCU"/>
+                            <constraint firstItem="fIr-O2-ynJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JQf-gC-E3n"/>
+                            <constraint firstItem="sWp-SW-PlO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="L8p-iy-4bx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BIM-xj-RCQ" secondAttribute="trailing" constant="20" id="NxB-5L-rq9"/>
+                            <constraint firstItem="BIM-xj-RCQ" firstAttribute="top" secondItem="fly-Ir-uex" secondAttribute="bottom" constant="40" id="O7N-R3-6F4"/>
+                            <constraint firstItem="3Fy-yQ-YJR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="RVI-Wq-oAe"/>
+                            <constraint firstItem="fIr-O2-ynJ" firstAttribute="top" secondItem="sWp-SW-PlO" secondAttribute="bottom" constant="10" id="SCc-rX-i2a"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Fy-yQ-YJR" secondAttribute="trailing" constant="20" id="Soi-0K-2xd"/>
+                            <constraint firstItem="sWp-SW-PlO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Z0B-mS-xJR"/>
+                            <constraint firstItem="sWp-SW-PlO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nR9-C7-WxG"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="computerImageView" destination="sWp-SW-PlO" id="Ctb-Ty-9PY"/>
+                        <outlet property="messageLabel" destination="BIM-xj-RCQ" id="F4e-sV-sW1"/>
+                        <outlet property="playerImageView" destination="fIr-O2-ynJ" id="fsY-6C-Ohm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="613" y="2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pa.jpg" width="150" height="150"/>
+        <image name="surubai180.png" width="180" height="180"/>
+    </resources>
+</document>
