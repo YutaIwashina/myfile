@@ -1,0 +1,66 @@
+<div id="down2">
+  <div class="koma6">
+
+  <ul id="calen">
+    <li class="day"><span class="red">日</span></li>
+    <li class="day">月</li>
+    <li class="day">火</li>
+    <li class="day">水</li>
+    <li class="day">木</li>
+    <li class="day">金</li>
+    <li class="day"><span class="blue">土</span></li>
+
+    <li> </li>
+    <li> </li>
+    <li> </li>
+    <li> </li>
+    <li> </li>
+    <a href="canvas.php?year=2016&month=7&day=1"><li>1</li></a>
+    <a href="canvas.php?year=2016&month=7&day=2"><li><span class="blue">2</span></li></a>
+
+    <a href="canvas.php?year=2016&month=7&day=3"><li><span class="red">3</span></li></a>
+    <a href="canvas.php?year=2016&month=7&day=4"><li>4</li></a>
+    <a href="canvas.php?year=2016&month=7&day=5"><li>5</li></a>
+    <a href="canvas.php?year=2016&month=7&day=6"><li>6</li></a>
+    <a href="canvas.php?year=2016&month=7&day=7"><li>7</li></a>
+    <a href="canvas.php?year=2016&month=7&day=8"><li>8</li></a>
+    <a href="canvas.php?year=2016&month=7&day=9"><li><span class="blue">9</span></li></a>
+
+    <a href="canvas.php?year=2016&month=7&day=10"><li><span class="red">10</span></li></a>
+    <a href="canvas.php?year=2016&month=7&day=11"><li>11</li></a>
+    <a href="canvas.php?year=2016&month=7&day=12"><li>12</li></a>
+    <a href="canvas.php?year=2016&month=7&day=13"><li>13</li></a>
+    <a href="canvas.php?year=2016&month=7&day=14"><li>14</li></a>
+    <a href="canvas.php?year=2016&month=7&day=15"><li>15</li></a>
+    <a href="canvas.php?year=2016&month=7&day=16"><li><span class="blue">16</span></li></a>
+
+    <a href="canvas.php?year=2016&month=7&day=17"><li><span class="red">17</span></li></a>
+    <a href="canvas.php?year=2016&month=7&day=18"><li>18</li></a>
+    <a href="canvas.php?year=2016&month=7&day=19"><li>19</li></a>
+    <a href="canvas.php?year=2016&month=7&day=20"><li>20</li></a>
+    <a href="canvas.php?year=2016&month=7&day=21"><li>21</li></a>
+    <a href="canvas.php?year=2016&month=7&day=22"><li>22</li></a>
+    <a href="canvas.php?year=2016&month=7&day=23"><li><span class="blue">23</span></li></a>
+
+    <a href="canvas.php?year=2016&month=7&day=24"><li><span class="red">24</span></li></a>
+    <a href="canvas.php?year=2016&month=7&day=25"><li>25</li></a>
+    <a href="canvas.php?year=2016&month=7&day=26"><li>26</li></a>
+    <a href="canvas.php?year=2016&month=7&day=27"><li>27</li></a>
+    <a href="canvas.php?year=2016&month=7&day=28"><li>28</li></a>
+    <a href="canvas.php?year=2016&month=7&day=29"><li>29</li></a>
+    <a href="canvas.php?year=2016&month=7&day=30"><li><span class="blue">30</span></li></a>
+
+    <a href="canvas.php?year=2016&month=7&day=31"><li><span class="red">31</span></li></a>
+    <li> </li>
+    <li> </li>
+    <li> </li>
+    <li> </li>
+    <li> </li>
+    <li> </li>
+
+  </ul>
+
+  </div>
+</div>
+
+</div>
